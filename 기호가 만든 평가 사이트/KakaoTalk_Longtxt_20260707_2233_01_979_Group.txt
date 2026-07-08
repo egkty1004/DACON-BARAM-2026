@@ -1,0 +1,34 @@
+# 2024 로컬 검증 파일 (안전한 방식)
+vam_base = (yr == VALID_YEAR)
+val_dt = tr.loc[vam_base, "forecast_kst_dtm"].values
+val_true_df = pd.DataFrame({"forecast_kst_dtm": val_dt})
+val_pred_df = pd.DataFrame({"forecast_kst_dtm": val_dt})
+
+print("\n===== Individual Group Validation Scores (Optuna Blend + Output Calibrated) =====")
+for tgt in TARGET_COLS:
+    cap = CAPACITY_KWH[tgt]
+    y_full = tr[tgt].values
+
+    # vam_base 전체 길이로 true 저장 (NaN 포함)
+    val_true_df[tgt] = y_full[vam_base]
+
+    # NaN이 아닌 위치에만 예측값 삽입
+    valid_mask_in_base = ~np.isnan(y_full[vam_base])
+    pred_full = np.full(vam_base.sum(), np.nan)
+
+    p_raw = (OPT_W['lgb'] * val_preds[tgt]['lgb'] +
+             OPT_W['xgb'] * val_preds[tgt]['xgb'] +
+             OPT_W['cb']  * val_preds[tgt]['cb']  +
+             OPT_W['ada'] * val_preds[tgt]['ada'])
+    p_cal = np.clip(calibrators_val[tgt](p_raw), 0, cap)
+
+    pred_full[valid_mask_in_base] = p_cal
+    val_pred_df[tgt] = pred_full
+
+    nmae, ficr, n_eval = group_metrics(val_y[tgt], p_cal, cap)
+    print(f"[{tgt}] 1-NMAE: {1-nmae:.4f} | FICR: {ficr:.4f} | "
+          f"Score: {0.5*(1-nmae)+0.5*ficr:.4f} | Eval samples: {n_eval}")
+
+val_true_df.to_csv("2024_answer_true.csv", index=False, encoding="utf-8-sig")
+val_pred_df.to_csv("2024_my_prediction.csv", index=False, encoding="utf-8-sig")
+print("✅ Streamlit Local Grader CSVs Saved!")

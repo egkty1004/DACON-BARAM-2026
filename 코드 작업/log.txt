@@ -1,0 +1,463 @@
+⏳ 1. 수치형 피처 추출 및 SimpleImputer 정밀 동기화 중...
+✅ 피처 매트릭스 빌드 완료! (최종 피처 개수: 80개)
+
+⚡ [Modeling Stage] 실시간 스코어 모니터링 교차 검증 시작...
+
+
+==================== 🎯 TARGET: kpx_group_1 훈련 시작 ====================
+
+▶ 📂 [Fold 1/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2899.14
+[400]	valid_0's l1: 2685.1
+[600]	valid_0's l1: 2593.51
+[800]	valid_0's l1: 2535.62
+[1000]	valid_0's l1: 2493.16
+[1200]	valid_0's l1: 2467.63
+[1400]	valid_0's l1: 2449.14
+[0]	validation_0-mae:6632.15752
+[200]	validation_0-mae:2922.60551
+[400]	validation_0-mae:2709.63584
+[600]	validation_0-mae:2645.09493
+[800]	validation_0-mae:2612.39498
+[1000]	validation_0-mae:2592.64972
+[1200]	validation_0-mae:2578.04740
+[1400]	validation_0-mae:2568.90440
+[1499]	validation_0-mae:2558.50354
+0:	learn: 4794.6185050	test: 6611.9383328	best: 6611.9383328 (0)	total: 163ms	remaining: 5m 25s
+300:	learn: 2984.7871319	test: 2260.3525047	best: 2260.3525047 (300)	total: 4.12s	remaining: 23.2s
+600:	learn: 2896.7501376	test: 2201.0156572	best: 2201.0156572 (600)	total: 8s	remaining: 18.6s
+900:	learn: 2792.8107223	test: 2163.2208600	best: 2163.2208600 (900)	total: 12.4s	remaining: 15.1s
+1200:	learn: 2705.0592033	test: 2133.4514552	best: 2133.4514552 (1200)	total: 17.2s	remaining: 11.5s
+1500:	learn: 2640.9591857	test: 2116.5666502	best: 2116.5666502 (1500)	total: 21.9s	remaining: 7.28s
+1800:	learn: 2603.3382202	test: 2106.3706179	best: 2106.3436379 (1796)	total: 25.9s	remaining: 2.86s
+1999:	learn: 2585.7644565	test: 2101.7285884	best: 2101.7285884 (1999)	total: 28.6s	remaining: 0us
+
+bestTest = 2101.728588
+bestIteration = 1999
+
+
+▶ 📂 [Fold 2/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2887.5
+[400]	valid_0's l1: 2668.61
+[600]	valid_0's l1: 2598.73
+[800]	valid_0's l1: 2520.11
+[1000]	valid_0's l1: 2476.97
+[1200]	valid_0's l1: 2445.51
+[1400]	valid_0's l1: 2424.53
+[0]	validation_0-mae:6565.65696
+[200]	validation_0-mae:2918.16398
+[400]	validation_0-mae:2704.76249
+[600]	validation_0-mae:2646.00493
+[800]	validation_0-mae:2615.44013
+[858]	validation_0-mae:2617.74438
+0:	learn: 4813.4456238	test: 6544.9498617	best: 6544.9498617 (0)	total: 15.2ms	remaining: 30.5s
+300:	learn: 2978.3336046	test: 2270.9988118	best: 2270.9988118 (300)	total: 4.2s	remaining: 23.7s
+600:	learn: 2889.9570540	test: 2212.6776445	best: 2212.6776445 (600)	total: 7.78s	remaining: 18.1s
+900:	learn: 2790.0323054	test: 2174.8311902	best: 2174.8311902 (900)	total: 11.6s	remaining: 14.2s
+1200:	learn: 2696.3785369	test: 2140.9142494	best: 2140.9142494 (1200)	total: 15.3s	remaining: 10.2s
+1500:	learn: 2636.5138652	test: 2120.7451840	best: 2120.7208637 (1498)	total: 18.9s	remaining: 6.29s
+1800:	learn: 2590.6749879	test: 2107.4891854	best: 2107.4891854 (1800)	total: 22.7s	remaining: 2.5s
+1999:	learn: 2562.6844388	test: 2101.5959417	best: 2101.5959417 (1999)	total: 25.1s	remaining: 0us
+
+bestTest = 2101.595942
+bestIteration = 1999
+
+
+▶ 📂 [Fold 3/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2967.73
+[400]	valid_0's l1: 2748.2
+[600]	valid_0's l1: 2667.25
+[800]	valid_0's l1: 2601.1
+[1000]	valid_0's l1: 2565.45
+[1200]	valid_0's l1: 2540.42
+[1400]	valid_0's l1: 2518.93
+[0]	validation_0-mae:6473.84609
+[200]	validation_0-mae:3006.28820
+[400]	validation_0-mae:2798.80213
+[600]	validation_0-mae:2733.58564
+[800]	validation_0-mae:2698.00736
+[1000]	validation_0-mae:2681.38537
+[1200]	validation_0-mae:2662.38739
+[1400]	validation_0-mae:2648.88216
+[1422]	validation_0-mae:2650.09114
+0:	learn: 4804.1956057	test: 6454.1288509	best: 6454.1288509 (0)	total: 11.9ms	remaining: 23.8s
+300:	learn: 2937.9928284	test: 2437.9429373	best: 2437.9429373 (300)	total: 3.91s	remaining: 22.1s
+600:	learn: 2851.2045264	test: 2373.1674771	best: 2373.1674771 (600)	total: 7.61s	remaining: 17.7s
+900:	learn: 2753.7666207	test: 2335.7699401	best: 2335.7612426 (899)	total: 11.5s	remaining: 14.1s
+1200:	learn: 2673.5127200	test: 2308.6743299	best: 2308.6743299 (1200)	total: 15.3s	remaining: 10.2s
+1500:	learn: 2615.2596615	test: 2290.6794881	best: 2290.6663065 (1499)	total: 18.8s	remaining: 6.24s
+1800:	learn: 2566.4515545	test: 2274.7243640	best: 2274.7243640 (1800)	total: 22.1s	remaining: 2.44s
+1999:	learn: 2539.8300019	test: 2266.9433040	best: 2266.9373423 (1997)	total: 24.3s	remaining: 0us
+
+bestTest = 2266.937342
+bestIteration = 1997
+
+Shrink model to first 1998 iterations.
+
+▶ 📂 [Fold 4/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2924.3
+[400]	valid_0's l1: 2704.82
+[600]	valid_0's l1: 2618.9
+[800]	valid_0's l1: 2549.35
+[1000]	valid_0's l1: 2502.69
+[1200]	valid_0's l1: 2479.53
+[1400]	valid_0's l1: 2458.91
+[0]	validation_0-mae:6572.55551
+[200]	validation_0-mae:2951.45238
+[400]	validation_0-mae:2736.54709
+[600]	validation_0-mae:2672.83171
+[800]	validation_0-mae:2639.67499
+[1000]	validation_0-mae:2622.74394
+[1200]	validation_0-mae:2608.57667
+[1400]	validation_0-mae:2600.30310
+[1499]	validation_0-mae:2595.80786
+0:	learn: 4830.7785833	test: 6551.0136739	best: 6551.0136739 (0)	total: 12.4ms	remaining: 24.7s
+300:	learn: 2976.3958385	test: 2274.7726983	best: 2274.7726983 (300)	total: 3.48s	remaining: 19.6s
+600:	learn: 2868.5735152	test: 2204.0307824	best: 2204.0307824 (600)	total: 6.78s	remaining: 15.8s
+900:	learn: 2768.2579200	test: 2164.6306182	best: 2164.6306182 (900)	total: 10.1s	remaining: 12.3s
+1200:	learn: 2701.0159058	test: 2144.1638170	best: 2144.1511241 (1199)	total: 13.5s	remaining: 8.95s
+1500:	learn: 2646.4388272	test: 2127.9594176	best: 2127.9070404 (1498)	total: 16.8s	remaining: 5.59s
+1800:	learn: 2607.9709822	test: 2118.8204037	best: 2118.8204037 (1800)	total: 20.1s	remaining: 2.22s
+1999:	learn: 2580.4102507	test: 2112.4120039	best: 2112.4120039 (1999)	total: 22.4s	remaining: 0us
+
+bestTest = 2112.412004
+bestIteration = 1999
+
+
+▶ 📂 [Fold 5/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2877.02
+[400]	valid_0's l1: 2669.32
+[600]	valid_0's l1: 2574.16
+[800]	valid_0's l1: 2506.1
+[1000]	valid_0's l1: 2474.51
+[1200]	valid_0's l1: 2447.04
+[1400]	valid_0's l1: 2423.22
+[0]	validation_0-mae:6625.94093
+[200]	validation_0-mae:2896.98541
+[400]	validation_0-mae:2690.93154
+[600]	validation_0-mae:2632.40120
+[800]	validation_0-mae:2598.98922
+[1000]	validation_0-mae:2579.00137
+[1200]	validation_0-mae:2562.29516
+[1324]	validation_0-mae:2561.94234
+0:	learn: 4793.1032419	test: 6607.1790756	best: 6607.1790756 (0)	total: 11.3ms	remaining: 22.6s
+300:	learn: 2980.0051918	test: 2249.1003070	best: 2249.1003070 (300)	total: 3.55s	remaining: 20s
+600:	learn: 2884.7435705	test: 2189.7511113	best: 2189.7511113 (600)	total: 6.89s	remaining: 16s
+900:	learn: 2769.4892871	test: 2150.0318077	best: 2150.0318077 (900)	total: 10.2s	remaining: 12.4s
+1200:	learn: 2683.6983223	test: 2122.1421429	best: 2122.1421429 (1200)	total: 13.6s	remaining: 9.03s
+1500:	learn: 2619.2471246	test: 2102.3603779	best: 2102.3536953 (1499)	total: 16.9s	remaining: 5.62s
+1800:	learn: 2576.6324295	test: 2090.2122236	best: 2090.2116827 (1799)	total: 20.3s	remaining: 2.24s
+1999:	learn: 2551.9748354	test: 2082.7016443	best: 2082.7016443 (1999)	total: 22.5s	remaining: 0us
+
+bestTest = 2082.701644
+bestIteration = 1999
+
+
+==================== 🎯 TARGET: kpx_group_2 훈련 시작 ====================
+
+▶ 📂 [Fold 1/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 3077.44
+[400]	valid_0's l1: 2787.98
+[600]	valid_0's l1: 2703.63
+[800]	valid_0's l1: 2658.98
+[1000]	valid_0's l1: 2618.95
+[1200]	valid_0's l1: 2590.17
+[1400]	valid_0's l1: 2555.19
+[0]	validation_0-mae:7261.78740
+[200]	validation_0-mae:3070.15018
+[400]	validation_0-mae:2821.84118
+[600]	validation_0-mae:2763.06810
+[800]	validation_0-mae:2731.54923
+[1000]	validation_0-mae:2712.31694
+[1200]	validation_0-mae:2699.75666
+[1400]	validation_0-mae:2686.44928
+[1488]	validation_0-mae:2687.83337
+0:	learn: 5221.9996970	test: 7238.6214272	best: 7238.6214272 (0)	total: 11.6ms	remaining: 23.1s
+300:	learn: 3034.0132815	test: 2424.0623345	best: 2424.0623345 (300)	total: 3.46s	remaining: 19.6s
+600:	learn: 2921.1320524	test: 2348.3403891	best: 2348.3403891 (600)	total: 6.82s	remaining: 15.9s
+900:	learn: 2814.3103449	test: 2300.4507832	best: 2300.4507832 (900)	total: 10.2s	remaining: 12.4s
+1200:	learn: 2746.7083263	test: 2278.7439974	best: 2278.7439974 (1200)	total: 13.5s	remaining: 9s
+1500:	learn: 2694.6410017	test: 2263.8182663	best: 2263.8182663 (1500)	total: 16.9s	remaining: 5.61s
+1800:	learn: 2650.1081976	test: 2252.0127228	best: 2252.0127228 (1800)	total: 20.3s	remaining: 2.24s
+1999:	learn: 2622.9583222	test: 2245.6381680	best: 2245.6381680 (1999)	total: 22.5s	remaining: 0us
+
+bestTest = 2245.638168
+bestIteration = 1999
+
+
+▶ 📂 [Fold 2/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 3065.19
+[400]	valid_0's l1: 2793.83
+[600]	valid_0's l1: 2712.09
+[800]	valid_0's l1: 2661.53
+[1000]	valid_0's l1: 2629.7
+[1200]	valid_0's l1: 2602.23
+[1400]	valid_0's l1: 2573.52
+[0]	validation_0-mae:7348.19454
+[200]	validation_0-mae:3091.51976
+[400]	validation_0-mae:2847.84310
+[600]	validation_0-mae:2782.60307
+[800]	validation_0-mae:2757.26762
+[1000]	validation_0-mae:2738.27270
+[1200]	validation_0-mae:2725.48284
+[1285]	validation_0-mae:2725.84704
+0:	learn: 5229.3313600	test: 7326.2380799	best: 7326.2380799 (0)	total: 14.1ms	remaining: 28.1s
+300:	learn: 3022.0996908	test: 2357.6616613	best: 2357.6616613 (300)	total: 3.56s	remaining: 20.1s
+600:	learn: 2915.7966827	test: 2288.5972502	best: 2288.5972502 (600)	total: 6.93s	remaining: 16.1s
+900:	learn: 2820.5321185	test: 2256.7358992	best: 2256.7358992 (900)	total: 10.3s	remaining: 12.6s
+1200:	learn: 2745.7725346	test: 2232.5068725	best: 2232.5068725 (1200)	total: 13.7s	remaining: 9.14s
+1500:	learn: 2691.0516789	test: 2217.3472509	best: 2217.3169544 (1498)	total: 17.1s	remaining: 5.69s
+1800:	learn: 2651.2104989	test: 2205.8825255	best: 2205.8825255 (1800)	total: 20.5s	remaining: 2.27s
+1999:	learn: 2626.5053905	test: 2198.9176924	best: 2198.9084973 (1997)	total: 22.8s	remaining: 0us
+
+bestTest = 2198.908497
+bestIteration = 1997
+
+Shrink model to first 1998 iterations.
+
+▶ 📂 [Fold 3/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 3088.23
+[400]	valid_0's l1: 2839.65
+[600]	valid_0's l1: 2764.1
+[800]	valid_0's l1: 2711.01
+[1000]	valid_0's l1: 2673.78
+[1200]	valid_0's l1: 2632.63
+[1400]	valid_0's l1: 2609.64
+[0]	validation_0-mae:7265.28554
+[200]	validation_0-mae:3105.98234
+[400]	validation_0-mae:2858.75006
+[600]	validation_0-mae:2797.95171
+[800]	validation_0-mae:2769.77200
+[1000]	validation_0-mae:2755.91357
+[1200]	validation_0-mae:2745.55821
+[1400]	validation_0-mae:2736.99234
+[1499]	validation_0-mae:2735.32822
+0:	learn: 5226.0086025	test: 7242.6164242	best: 7242.6164242 (0)	total: 14.1ms	remaining: 28.3s
+300:	learn: 3020.4077908	test: 2442.0751742	best: 2442.0751742 (300)	total: 3.75s	remaining: 21.1s
+600:	learn: 2932.2845211	test: 2369.8983685	best: 2369.8983685 (600)	total: 7.13s	remaining: 16.6s
+900:	learn: 2837.3419305	test: 2326.8146535	best: 2326.6928395 (897)	total: 10.5s	remaining: 12.9s
+1200:	learn: 2756.9551826	test: 2299.9642758	best: 2299.9642758 (1200)	total: 13.9s	remaining: 9.26s
+1500:	learn: 2699.6081877	test: 2282.0308147	best: 2282.0308147 (1500)	total: 17.3s	remaining: 5.76s
+1800:	learn: 2655.7212432	test: 2269.6381366	best: 2269.5834257 (1798)	total: 20.8s	remaining: 2.29s
+1999:	learn: 2630.2151885	test: 2262.7923420	best: 2262.7923420 (1999)	total: 23.1s	remaining: 0us
+
+bestTest = 2262.792342
+bestIteration = 1999
+
+
+▶ 📂 [Fold 4/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 3048.53
+[400]	valid_0's l1: 2783.84
+[600]	valid_0's l1: 2723.27
+[800]	valid_0's l1: 2646.47
+[1000]	valid_0's l1: 2603.89
+[1200]	valid_0's l1: 2567.75
+[1400]	valid_0's l1: 2539.69
+[0]	validation_0-mae:7420.57977
+[200]	validation_0-mae:3083.99477
+[400]	validation_0-mae:2840.69990
+[600]	validation_0-mae:2777.35327
+[800]	validation_0-mae:2750.79049
+[1000]	validation_0-mae:2733.80743
+[1200]	validation_0-mae:2719.85696
+[1400]	validation_0-mae:2702.58147
+[1499]	validation_0-mae:2695.91503
+0:	learn: 5226.5369934	test: 7395.2856327	best: 7395.2856327 (0)	total: 13.2ms	remaining: 26.3s
+300:	learn: 3044.7997370	test: 2312.9538380	best: 2312.9538380 (300)	total: 3.84s	remaining: 21.7s
+600:	learn: 2939.1986927	test: 2237.4843648	best: 2237.4843648 (600)	total: 7.23s	remaining: 16.8s
+900:	learn: 2842.7479999	test: 2192.1127298	best: 2192.0884190 (899)	total: 10.6s	remaining: 13s
+1200:	learn: 2758.3637426	test: 2159.8153015	best: 2159.8153015 (1200)	total: 14.1s	remaining: 9.38s
+1500:	learn: 2692.6371024	test: 2138.7667573	best: 2138.7667573 (1500)	total: 17.6s	remaining: 5.84s
+1800:	learn: 2641.4748445	test: 2120.6402155	best: 2120.6402155 (1800)	total: 21s	remaining: 2.32s
+1999:	learn: 2613.5832784	test: 2111.1554962	best: 2111.1554962 (1999)	total: 23.3s	remaining: 0us
+
+bestTest = 2111.155496
+bestIteration = 1999
+
+
+▶ 📂 [Fold 5/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 3010.8
+[400]	valid_0's l1: 2738.19
+[600]	valid_0's l1: 2651.33
+[800]	valid_0's l1: 2580.63
+[1000]	valid_0's l1: 2531.68
+[1200]	valid_0's l1: 2511.26
+[1400]	valid_0's l1: 2491.95
+[0]	validation_0-mae:7371.77357
+[200]	validation_0-mae:3044.41637
+[400]	validation_0-mae:2794.67258
+[600]	validation_0-mae:2731.50889
+[800]	validation_0-mae:2699.18121
+[1000]	validation_0-mae:2680.66522
+[1200]	validation_0-mae:2668.49372
+[1400]	validation_0-mae:2662.41620
+[1499]	validation_0-mae:2657.15053
+0:	learn: 5219.8404017	test: 7348.6449171	best: 7348.6449171 (0)	total: 12.7ms	remaining: 25.3s
+300:	learn: 3046.4721788	test: 2289.9941010	best: 2289.9941010 (300)	total: 3.6s	remaining: 20.3s
+600:	learn: 2956.4219167	test: 2227.6632336	best: 2227.6632336 (600)	total: 6.95s	remaining: 16.2s
+900:	learn: 2846.7646366	test: 2189.5477174	best: 2189.5477174 (900)	total: 10.4s	remaining: 12.7s
+1200:	learn: 2754.0918001	test: 2165.0359767	best: 2165.0359767 (1200)	total: 13.8s	remaining: 9.21s
+1500:	learn: 2690.3232451	test: 2150.4574086	best: 2150.4470116 (1496)	total: 17.3s	remaining: 5.74s
+1800:	learn: 2639.0034256	test: 2139.1202082	best: 2139.1202082 (1800)	total: 20.7s	remaining: 2.29s
+1999:	learn: 2610.7740763	test: 2133.5660539	best: 2133.5660539 (1999)	total: 23s	remaining: 0us
+
+bestTest = 2133.566054
+bestIteration = 1999
+
+
+==================== 🎯 TARGET: kpx_group_3 훈련 시작 ====================
+
+▶ 📂 [Fold 1/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2872.63
+[400]	valid_0's l1: 2611.07
+[600]	valid_0's l1: 2461.2
+[800]	valid_0's l1: 2404.81
+[1000]	valid_0's l1: 2391.53
+[1200]	valid_0's l1: 2370.79
+[1400]	valid_0's l1: 2348.24
+[0]	validation_0-mae:6427.77352
+[200]	validation_0-mae:2912.16089
+[400]	validation_0-mae:2693.56235
+[600]	validation_0-mae:2637.91916
+[800]	validation_0-mae:2616.03441
+[1000]	validation_0-mae:2604.38626
+[1200]	validation_0-mae:2585.82248
+[1400]	validation_0-mae:2574.66975
+[1499]	validation_0-mae:2569.43208
+0:	learn: 4457.2987299	test: 6401.5816564	best: 6401.5816564 (0)	total: 12.6ms	remaining: 25.3s
+300:	learn: 2906.6621204	test: 2110.8762405	best: 2110.8762405 (300)	total: 3.66s	remaining: 20.7s
+600:	learn: 2808.5654964	test: 2052.6641605	best: 2052.6641605 (600)	total: 7.09s	remaining: 16.5s
+900:	learn: 2712.5286128	test: 2012.3242925	best: 2012.3242925 (900)	total: 10.5s	remaining: 12.8s
+1200:	learn: 2637.1892139	test: 1986.2615176	best: 1986.2615176 (1200)	total: 14s	remaining: 9.3s
+1500:	learn: 2581.5853769	test: 1968.7633299	best: 1968.7633299 (1500)	total: 17.4s	remaining: 5.8s
+1800:	learn: 2536.7056179	test: 1958.2436692	best: 1958.2436692 (1800)	total: 20.9s	remaining: 2.31s
+1999:	learn: 2507.7902191	test: 1951.0904203	best: 1951.0904203 (1999)	total: 23.2s	remaining: 0us
+
+bestTest = 1951.09042
+bestIteration = 1999
+
+
+▶ 📂 [Fold 2/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2987.89
+[400]	valid_0's l1: 2750.78
+[600]	valid_0's l1: 2572.22
+[800]	valid_0's l1: 2473.63
+[1000]	valid_0's l1: 2441.31
+[1200]	valid_0's l1: 2415.38
+[1400]	valid_0's l1: 2388
+[0]	validation_0-mae:6503.62109
+[200]	validation_0-mae:3007.47668
+[400]	validation_0-mae:2795.72866
+[600]	validation_0-mae:2746.68418
+[800]	validation_0-mae:2713.98686
+[1000]	validation_0-mae:2688.71415
+[1200]	validation_0-mae:2671.27848
+[1400]	validation_0-mae:2647.95240
+[1499]	validation_0-mae:2641.07604
+0:	learn: 4420.5448940	test: 6476.5612143	best: 6476.5612143 (0)	total: 12.4ms	remaining: 24.8s
+300:	learn: 2886.7706514	test: 2181.9907591	best: 2181.9907591 (300)	total: 3.65s	remaining: 20.6s
+600:	learn: 2791.8223744	test: 2123.8770703	best: 2123.8770703 (600)	total: 7.05s	remaining: 16.4s
+900:	learn: 2691.9481462	test: 2090.6983776	best: 2090.6919798 (899)	total: 10.5s	remaining: 12.8s
+1200:	learn: 2631.2058849	test: 2073.7131885	best: 2073.7131885 (1200)	total: 14s	remaining: 9.32s
+1500:	learn: 2575.6987314	test: 2056.9973921	best: 2056.9472537 (1499)	total: 17.5s	remaining: 5.8s
+1800:	learn: 2525.8859919	test: 2042.9518515	best: 2042.9518515 (1800)	total: 20.9s	remaining: 2.31s
+1999:	learn: 2496.5950003	test: 2033.6778774	best: 2033.6778774 (1999)	total: 23.2s	remaining: 0us
+
+bestTest = 2033.677877
+bestIteration = 1999
+
+
+▶ 📂 [Fold 3/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2962.08
+[400]	valid_0's l1: 2714.11
+[600]	valid_0's l1: 2543.43
+[800]	valid_0's l1: 2474.04
+[1000]	valid_0's l1: 2435.51
+[1200]	valid_0's l1: 2415.36
+[1400]	valid_0's l1: 2378.13
+[0]	validation_0-mae:6346.31078
+[200]	validation_0-mae:2986.79016
+[400]	validation_0-mae:2772.44475
+[600]	validation_0-mae:2724.97890
+[800]	validation_0-mae:2687.82450
+[1000]	validation_0-mae:2655.49095
+[1200]	validation_0-mae:2636.35730
+[1400]	validation_0-mae:2618.57191
+[1499]	validation_0-mae:2609.78303
+0:	learn: 4471.3729099	test: 6321.3635751	best: 6321.3635751 (0)	total: 12.2ms	remaining: 24.3s
+300:	learn: 2871.9876946	test: 2179.0566812	best: 2179.0566812 (300)	total: 3.71s	remaining: 20.9s
+600:	learn: 2783.5550739	test: 2129.4960588	best: 2129.4960588 (600)	total: 7.2s	remaining: 16.8s
+900:	learn: 2680.5045743	test: 2092.5399563	best: 2092.5399563 (900)	total: 10.6s	remaining: 13s
+1200:	learn: 2609.1470953	test: 2072.2938650	best: 2072.2900102 (1199)	total: 14.1s	remaining: 9.39s
+1500:	learn: 2558.4980896	test: 2058.6496603	best: 2058.6346027 (1491)	total: 17.6s	remaining: 5.85s
+1800:	learn: 2517.3056066	test: 2049.5957355	best: 2049.5636232 (1798)	total: 21.2s	remaining: 2.34s
+1999:	learn: 2493.7993857	test: 2044.4604319	best: 2044.4344125 (1986)	total: 23.5s	remaining: 0us
+
+bestTest = 2044.434412
+bestIteration = 1986
+
+Shrink model to first 1987 iterations.
+
+▶ 📂 [Fold 4/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2943.89
+[400]	valid_0's l1: 2690.09
+[600]	valid_0's l1: 2557.75
+[800]	valid_0's l1: 2484.79
+[1000]	valid_0's l1: 2414.26
+[1200]	valid_0's l1: 2388.41
+[1400]	valid_0's l1: 2363.68
+[0]	validation_0-mae:6494.22091
+[200]	validation_0-mae:2966.91628
+[400]	validation_0-mae:2750.56311
+[600]	validation_0-mae:2686.89323
+[800]	validation_0-mae:2658.39250
+[1000]	validation_0-mae:2637.05474
+[1200]	validation_0-mae:2610.31146
+[1400]	validation_0-mae:2600.56913
+[1499]	validation_0-mae:2595.36286
+0:	learn: 4457.2913427	test: 6469.3098436	best: 6469.3098436 (0)	total: 12.5ms	remaining: 25s
+300:	learn: 2892.8878837	test: 2100.6049196	best: 2100.6049196 (300)	total: 3.65s	remaining: 20.6s
+600:	learn: 2797.8335941	test: 2035.7668434	best: 2035.7668434 (600)	total: 7.1s	remaining: 16.5s
+900:	learn: 2697.2297716	test: 1993.5916523	best: 1993.5916523 (900)	total: 10.6s	remaining: 13s
+1200:	learn: 2608.7002726	test: 1967.4648731	best: 1967.4640202 (1198)	total: 14.2s	remaining: 9.42s
+1500:	learn: 2553.8671282	test: 1950.7028588	best: 1950.7028588 (1500)	total: 17.7s	remaining: 5.9s
+1800:	learn: 2502.7030141	test: 1938.6502590	best: 1938.6268751 (1799)	total: 21.3s	remaining: 2.35s
+1999:	learn: 2477.3843655	test: 1934.2873273	best: 1934.1255202 (1991)	total: 23.6s	remaining: 0us
+
+bestTest = 1934.12552
+bestIteration = 1991
+
+Shrink model to first 1992 iterations.
+
+▶ 📂 [Fold 5/5] 내부 분할 학습 진행 중...
+[200]	valid_0's l1: 2892.41
+[400]	valid_0's l1: 2662.77
+[600]	valid_0's l1: 2476.74
+[800]	valid_0's l1: 2392.53
+[1000]	valid_0's l1: 2350.38
+[1200]	valid_0's l1: 2324.65
+[1400]	valid_0's l1: 2305.79
+[0]	validation_0-mae:6474.09343
+[200]	validation_0-mae:2917.53114
+[400]	validation_0-mae:2699.21900
+[600]	validation_0-mae:2648.82030
+[800]	validation_0-mae:2623.50227
+[1000]	validation_0-mae:2608.82807
+[1200]	validation_0-mae:2593.37741
+[1400]	validation_0-mae:2572.32902
+[1499]	validation_0-mae:2568.03299
+0:	learn: 4441.9934298	test: 6448.6499090	best: 6448.6499090 (0)	total: 12.6ms	remaining: 25.3s
+300:	learn: 2924.5384408	test: 2051.5396519	best: 2051.5396519 (300)	total: 3.69s	remaining: 20.8s
+600:	learn: 2830.4904299	test: 1996.9091418	best: 1996.9091418 (600)	total: 7.14s	remaining: 16.6s
+900:	learn: 2732.7746838	test: 1967.1840503	best: 1967.1840503 (900)	total: 10.7s	remaining: 13s
+1200:	learn: 2662.6221226	test: 1948.0184814	best: 1948.0184814 (1200)	total: 14.2s	remaining: 9.44s
+1500:	learn: 2596.8088494	test: 1927.2542475	best: 1927.2542475 (1500)	total: 17.9s	remaining: 5.96s
+1800:	learn: 2543.7473399	test: 1912.4648786	best: 1912.4425940 (1799)	total: 21.6s	remaining: 2.38s
+1999:	learn: 2511.4770283	test: 1905.7464924	best: 1905.7078187 (1998)	total: 23.9s	remaining: 0us
+
+bestTest = 1905.707819
+bestIteration = 1998
+
+Shrink model to first 1999 iterations.
+
+🏆 [성공] 변수 누락 지뢰가 완전히 박멸되었습니다! 이어서 최적화 블렌딩 셀(7번)을 구동해 주세요.
